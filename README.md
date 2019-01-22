@@ -7,7 +7,7 @@
 ## Install
 
 ```shell
-$ npm i omaewamailchecker
+$ npm i -g omaewamailchecker
 ```
 
 ### How to use
@@ -20,7 +20,7 @@ $ OmaeWaMou youremail@adress.com
 
 [**Have I been pwned?**](https://haveibeenpwned.com)
 
-## Package Used :
+## Package :
 
 _Will be installed with_ :
 
