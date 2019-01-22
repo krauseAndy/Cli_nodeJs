@@ -1,5 +1,5 @@
 {
-  "name": "omaewa",
+  "name": "omaewamailchecker",
   "version": "1.0.0",
   "description": "cli",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "author": "Andy",
   "license": "ISC",
   "bin": {
-    "OmaeWa": "./index.js"
+    "OmaeWaMou": "./index.js"
   },
   "bugs": {
     "url": "https://github.com/krauseAndy/Node_Cli/issues"
@@ -25,6 +25,7 @@
     "email-validator": "^2.0.4",
     "figlet": "^1.2.1",
     "isemail": "^3.2.0",
+    "omaewa": "^1.0.1",
     "ora": "^3.0.0",
     "prompt": "^1.0.0"
   }

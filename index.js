@@ -5,22 +5,38 @@ const figlet = require("figlet");
 const validator = require("email-validator");
 const axios = require("axios");
 const ora = require("ora");
+const omae = require("omaewa");
+
+omae();
 
 const [, , ...args] = process.argv;
 
 console.log(
     chalk.yellowBright.bgBlack(
-        figlet.textSync("OmaeWa..", {
+        figlet.textSync("OmaeWa..Mou", {
             font: "ANSI Shadow",
             horizontalLayout: "default",
             verticalLayout: "default"
         })
     )
 );
+
 if (validator.validate(`${args}`) == true) {
     console.log(chalk.bgGreen.black(`L'email : ${args} est bien valide. \n`));
 
-    const spinner = ora('Loading unicorns');
+    const spinner = ora({
+        text: 'Shinderu',
+        spinner: {
+            interval: 80,
+            frames: [
+                "3o",
+                "3=D",
+                "3==D",
+                "3===D",
+                "3====D"
+            ]
+        }
+    });
 
     spinner.color = 'yellow';
     spinner.text = 'Loading rainbows';
@@ -37,8 +53,8 @@ if (validator.validate(`${args}`) == true) {
         .then(function (response) {
             spinner.stop();
             response.data.forEach(function (breach) {
-                console.log(breach.Name);
-                console.log(breach.Domain);
+                console.log(chalk.bgBlack.yellowBright(breach.Name));
+                console.log(chalk.bgBlack.yellowBright(breach.Domain));
                 console.log(breach.Description);
             });
         })
