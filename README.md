@@ -1,7 +1,7 @@
 # NodeJS - Email Breach Checker !
 
 <div style="text-align: center">
-    <img src="./NANI.png" height="300"/>
+    <img src="https://images-eu.ssl-images-amazon.com/images/I/717PmDyKW-L.png" height="300"/>
 </div>
 
 ## Install
