@@ -39,7 +39,6 @@ if (validator.validate(`${args}`) == true) {
     });
 
     spinner.color = 'yellow';
-    spinner.text = 'Loading rainbows';
 
     spinner.start();
 
@@ -51,7 +50,7 @@ if (validator.validate(`${args}`) == true) {
             }
         })
         .then(function (response) {
-            spinner.stop();
+            spinner.succeed("NANI ?!");
             response.data.forEach(function (breach) {
                 console.log(chalk.bgBlack.yellowBright(breach.Name));
                 console.log(chalk.bgBlack.yellowBright(breach.Domain));
@@ -60,7 +59,7 @@ if (validator.validate(`${args}`) == true) {
         })
 
         .catch(function (error) {
-            spinner.stop();
+            spinner.succeed("NANI ?!");
             if (error.response) {
                 console.log(chalk.black.bgGreen(`Aucun soucis sur cette adresse \n`));
             } else {
