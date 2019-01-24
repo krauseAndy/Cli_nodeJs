@@ -25,7 +25,7 @@ if (validator.validate(`${args}`) == true) {
     console.log(chalk.bgGreen.black(`L'email : ${args} est bien valide. \n`));
 
     const spinner = ora({
-        text: 'Shinderu',
+        text: 'Shindeiru',
         spinner: {
             interval: 80,
             frames: [
